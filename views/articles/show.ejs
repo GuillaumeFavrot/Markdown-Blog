@@ -16,7 +16,7 @@
         <a href="/" class = "btn btn-secondary mb-4">All articles</a>
         <a href="/articles/edit/<%= article.id %>" class = "btn btn-info mb-4">Edit</a>
         <div>
-            <%= article.markdown %>
+            <%- article.sanitizedHtml %>
         </div>
     </div>
         
